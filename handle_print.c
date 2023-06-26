@@ -10,8 +10,10 @@
 * @width: The width of the output.
 * @precision: The precision specification.
 * @size: The specifier for size.
+*
 * Return: 1 or 2, indicating success or failure.
 */
+
 int handle_print(const char *fmt, int *index, va_list list, char buffer[],
 	int width, int precision, int size, int _flags)
 {

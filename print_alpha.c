@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_string - loops through a string and prints
+ * print_string - Loops through string and prints.
  * every character
- * @l: va_list arguments from _printf
- * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
+ * @l: va_list arguments in _printf.
+ * @f: Pointer to flags struct that determines.
+ * Flag check in _printf.
  * Return: number of char printed
  */
 int print_string(va_list l, flags_t *f)
@@ -22,8 +22,8 @@ int print_string(va_list l, flags_t *f)
 /**
  * print_char - prints a character
  * @l: va_list arguments from _printf
- * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
+ * @f: Pointer to flags struct for determination.
+ * Flag presence check in _printf.
  * Return: number of char printed
  */
 int print_char(va_list l, flags_t *f)

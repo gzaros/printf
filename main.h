@@ -5,11 +5,11 @@
 #include <stdarg.h>
 
 /**
- * struct flags - struct containing flags to "turn on"
- * when a flag specifier is passed to _printf()
- * @plus: flag for the '+' character
- * @space: flag for the ' ' character
- * @hash: flag for the '#' character
+ * struct flags - Struct with flags for activation.
+ * when a flag Specifier passed to _printf().
+ * @plus: Flag for the '+' character.
+ * @space: flag for the ' ' character.
+ * @hash: flag for the '#' character.
  */
 typedef struct flags
 {
@@ -19,10 +19,10 @@ typedef struct flags
 } flags_t;
 
 /**
- * struct printHandler - struct to choose the right function depending
- * on the format specifier passed to _printf()
+ * struct printHandler - Struct for selecting the appropriate function.
+ * Selection struct based on format specifier in _printf().
  * @c: format specifier
- * @f: pointer to the correct printing function
+ * @f: Pointer to correct printing function.
  */
 typedef struct printHandler
 {

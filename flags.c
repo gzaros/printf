@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * get_flags - Extracts and calculates the flags present in a formatted string
  * @format: The formatted string to analyze

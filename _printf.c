@@ -5,10 +5,8 @@ void print_buffer(char buffer[], int *buff_index);
 /**
  * _printf - Printf function
  * @format: The format
- *
  * Return: chars to be _printed
  */
-
 int _printf(const char *format, ...)
 {
 	int increment, _printed = 0, printed_chars = 0;
@@ -66,3 +64,4 @@ void print_buffer(char buffer[], int *buff_index)
 
 	*buff_index = 0;
 }
+

@@ -24,7 +24,6 @@
  * @_fmt: The format.
  * @fn: The function associated.
  */
-
 struct _fmt
 {
 	char _fmt;
@@ -115,3 +114,4 @@ int is_digit(char);
 long int convert_size_unsgnd(unsigned long int num, int size);
 long int convert_size_number(long int num, int size);
 #endif
+

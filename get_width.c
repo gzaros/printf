@@ -9,7 +9,6 @@
  * Return:
  * The calculated width.
  */
-
 int get_width(const char *format, int *i, va_list list)
 {
 	int selected_i;

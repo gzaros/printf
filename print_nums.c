@@ -2,24 +2,24 @@
 
 /**
  * print_int - prints an integer
- * @l: va_list of arguments from _printf
+ * @l: va_list of arguments in _printf.
  * @f: pointer to the struct flags determining
- * if a flag is passed to _printf
- * Return: number of char printed
+ * Flag check in _printf.
+ * Return: Number of characters printed.
  */
 int print_int(va_list l, flags_t *f)
 {
 	int n = va_arg(l, int);
-	int res = count_digit(n);
+	int result = count_digit(n);
 
 	if (f->space == 1 && f->plus == 0 && n >= 0)
-		res += _putchar(' ');
+		result += _putchar(' ');
 	if (f->plus == 1 && n >= 0)
-		res += _putchar('+');
+		result += _putchar('+');
 	if (n <= 0)
-		res++;
+		result++;
 	print_number(n);
-	return (res);
+	return (result);
 }
 
 /**
@@ -61,10 +61,10 @@ void print_number(int n)
 }
 
 /**
- * count_digit - returns the number of digits in an integer
+ * count_digit - Returns the number of digits in an integer.
  * for _printf
  * @i: integer to evaluate
- * Return: number of digits
+ * Return: Number of digits.
  */
 int count_digit(int i)
 {

@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * get_print - selects the right printing function
- * depending on the conversion specifier passed to _printf
- * @s: character that holds the conversion specifier
- * Description: the function loops through the structs array
- * func_arr[] to find a match between the specifier passed to _printf
- * and the first element of the struct, and then the approriate
+ * get_print - Selects appropriate printing function.
+ * Selection of printing function based on conversion specifier.
+ * @s: Character for conversion specifier.
+ * Description: Loops through struct array.
+ * func_arr[] Matches specifier in _printf.
+ * Finds match with first struct element, then executes accordingly.
  * printing function
- * Return: a pointer to the matching printing function
+ * Return: Pointer to matching printing function.
  */
 int (*get_print(char s))(va_list, flags_t *)
 {
